@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequalize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {}
@@ -12,7 +12,7 @@ Post.init(
             autoIncrement: true,
         },
         title: {
-            tyoe: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         content: {

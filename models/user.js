@@ -8,6 +8,11 @@ class User extends Model {
     }
 }
 
+// const passHash = async (userData) => {
+//     userData.password = await bcrypt.hash(userData.password, 10);
+//     return userData;
+// };
+
 User.init(
     {
         id: {
@@ -17,7 +22,7 @@ User.init(
             autoIncrement: true,
         },
         username: {
-            tyoe: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true,
         },
