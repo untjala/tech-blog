@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <title>Tech Blog</title>
+</head>
+
+<header> 
+<div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading pure-menu-link">Tech Blog</a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a href="/" class="pure-menu-link">Home</a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="/dash" class="pure-menu-link">Dash</a>
+        </li>
+        {{#if loggedIn}}
+        <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" id="logout">Logout</a>
+        </li>
+        {{else}}
+        <li class="pure-menu-item">
+            <a href="/login" class="pure-menu-link" id="logout">Login</a>
+        </li>
+        {{/if}}
+    </ul>
+</div>
+<main>
+    {{{body}}}
+</main>
+ {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+</html>
