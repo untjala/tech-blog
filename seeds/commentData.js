@@ -7,7 +7,7 @@ const commentData = [
         "post_id": 1
     },
     {
-        "content": "Seld-friving cars just aren't going to be ready anytime soon.",
+        "content": "Self-friving cars just aren't going to be ready anytime soon.",
         "user_id": 1,
         "post_id": 2
     },

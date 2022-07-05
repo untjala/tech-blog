@@ -1,6 +1,6 @@
 const {Post} = require('../models');
 
-const commentData = [
+const postData = [
     {
         "title": "Google settles for 90 million dollars in app developer suit ",
         "content": "Last Friday, Google settled a case with Android app developers, who claimed the tech giant over-charged for in-app fees.",
@@ -18,5 +18,5 @@ const commentData = [
     },
 ]
 
-const seedPosts = () => Comment.bulkCreate(commentData)
+const seedPosts = () => Post.bulkCreate(postData)
 module.exports = seedPosts();
